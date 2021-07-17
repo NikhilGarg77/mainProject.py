@@ -1,0 +1,228 @@
+<html>
+  <head>
+    <link rel="stylesheet" href= "https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+    <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@600&display=swap" rel="stylesheet">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" >
+    <link href="{{ url_for('static',filename='header.css') }}" rel="stylesheet">
+    <link href="{{ url_for('static',filename='homepage.css') }}" rel="stylesheet">
+      <title>Vaccine Finder</title>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top" style="background-color: white">
+        <a class="navbar-brand" href="http://127.0.0.1:5000/"><img class="d-inline-block align-top" src="{{ url_for('static',filename='images/vac-logo.png') }}" width="120" height="80" style="margin-left: 25px;"></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse"
+          aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a class="nav-link" data-toggle="collapse" data-target=".navbar-collapse.show" routerLink="http://127.0.0.1:5000/">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" data-toggle="collapse" data-target=".navbar-collapse.show" routerLink="http://127.0.0.1:5000/about_us">About Us</a>
+            </li>
+              <form class="nav-item" action="/cert" method="get">
+              <button type="submit" style="background-color:white; border:none" class="nav-link"  data-toggle="collapse" data-target=".navbar-collapse.show" href="http://127.0.0.1:5000/cert"> Get Certificate</button>
+            </form>
+
+            <li class="nav-item">
+              <a class="nav-link" data-toggle="collapse" data-target=".navbar-collapse.show" href="contact_us.html">Contact Us</a>
+            </li>
+           <form class="form-inline" style="margin-left: 40px;" action="/admin" method="get">
+            <button type="submit"  class="btn btn-primary btn-md my-2 my-sm-0"  data-toggle="collapse" data-target=".navbar-collapse.show" style="margin-right: 1pc;" href="http://127.0.0.1:5000/admin"> Admin </button>
+             </form>
+              <form class="form-inline" action="/register" method="get">
+              <button type="submit"  class="btn btn-primary btn-md my-2 my-sm-0"  data-toggle="collapse" data-target=".navbar-collapse.show" href="http://127.0.0.1:5000/sign-in"> Register/ Sign In yourself </button>
+            </form>
+          </ul>
+        </div>
+      </nav>
+
+      <section id="post-header">
+        <div class="container">
+            <div class="row">
+                <div class="col-6 text-left">
+                        <p>Approved by Goverment of India</p>
+                </div>
+                <div class="col-6 text-right">
+                        <p>Ministry of Health and Family Welfare</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="helpline">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <h3 class="text-center" style="line-height: 25px; font-size: 20px; font-weight: 700;">Helpline</h3>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-3 text-center">
+                        <div class="helpine">
+                            <p>Health Ministry</p>
+                            <div class="tab-index">
+                                <p> <i class="fa fa-phone" aria-hidden="true"></i><a href="tel:1075">1075</a></p>
+                            </div>
+                        </div>
+                </div>
+               <div class="col-3 text-center">
+                        <div class="helpine">
+                            <p>Child</p>
+                            <div class="tab-index">
+                                <p>  <i class="fa fa-phone" aria-hidden="true"></i><a href="tel:1098"> 1098</a></p>
+                            </div>
+                        </div>
+                </div>
+                <div class="col-3 text-center">
+                        <div class="helpine">
+                            <p>Mental Health</p>
+                            <div class="tab-index">
+                                <p>  <i class="fa fa-phone" aria-hidden="true"></i> <a href="tel:989283823">989283823</a></p>
+                            </div>
+                        </div>
+                </div>
+                <div class="col-3 text-center">
+                        <div class="helpine">
+                            <p>Senior Citizens</p>
+                            <div class="tab-index">
+                                <p> <i class="fa fa-phone" aria-hidden="true"></i><a href="tel:14567"> 14567</a></p>
+                            </div>
+                        </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="features">
+        <br>
+    <div _ngcontent-ubl-c113="" class="getVaccinationSection">
+        <div _ngcontent-ubl-c113="" class="container">
+            <h1 _ngcontent-ubl-c113="" class="text-center accessibility-plugin-ac">How To Get Your Vaccination</h1>
+            <div _ngcontent-ubl-c113="" class="row mt-5 d-flex justify-content-center">
+                <div _ngcontent-ubl-c113="" class="col-12 col-sm-6 col-md-4 col-lg-4">
+                    <div _ngcontent-ubl-c113="" class="card">
+                        <img _ngcontent-ubl-c113="" src="https://prod-cdn.preprod.co-vin.in/sandbox/assets/images/vaccination-thumb-1.jpg" alt="largest vaccine drive" class="card-img-top">
+                        <div _ngcontent-ubl-c113="" class="card-body">
+                            <h3 _ngcontent-ubl-c113="" class="card-title accessibility-plugin-ac">Book An Appointment or Walk Into Any <br>Vaccination Center</h3>
+                            <p _ngcontent-ubl-c113="" class="card-text text-center">
+                                <a _ngcontent-ubl-c113="" href="http://127.0.0.1:5000/register" target="_blank" class="accessibility-plugin-ac" title="How to book your appointment on CoWIN" aria-label="How to book your appointment on CoWIN"> How to book your appointment</a>
+                            </p></div></div></div>
+                            <div _ngcontent-ubl-c113="" class="col-12 col-sm-6 col-md-4 col-lg-4">
+                                <div _ngcontent-ubl-c113="" class="card"><img _ngcontent-ubl-c113="" src="https://prod-cdn.preprod.co-vin.in/sandbox/assets/images/vaccination-thumb-2.jpg" alt="largest vaccine drive" class="card-img-top">
+                                    <div _ngcontent-ubl-c113="" class="card-body">
+                                        <h3 _ngcontent-ubl-c113="" class="card-title accessibility-plugin-ac">Get Your Vaccination <br> Safely at the Time of Your <br> Appointment
+                                        </h3>
+                                        <p _ngcontent-ubl-c113="" class="card-text text-center">
+                                            <a _ngcontent-ubl-c113="" target="_blank" class="accessibility-plugin-ac" href="https://prod-cdn.preprod.co-vin.in/assets/pdf/Dos_and_Donts_for_Citizens.pdf" title="Dos and dont's for getting vaccinated" aria-label="Dos and dont's for getting vaccinated">Dos and dont's for getting vaccinated</a>
+                                        </p></div></div></div>
+                                        <div _ngcontent-ubl-c113="" class="col-12 col-sm-6 col-md-4 col-lg-4">
+                                            <div _ngcontent-ubl-c113="" class="card">
+                                                <img _ngcontent-ubl-c113="" src="https://prod-cdn.preprod.co-vin.in/sandbox/assets/images/vaccination-thumb-3.jpg" alt="largest vaccine drive" class="card-img-top"><div _ngcontent-ubl-c113="" class="card-body">
+                                                    <h3 _ngcontent-ubl-c113="" class="card-title accessibility-plugin-ac">Download Your Vaccination <br> Certificate <br> and Wait for Dose #2</h3>
+                                                    <p _ngcontent-ubl-c113="" class="card-text text-center"><a href="http://127.0.0.1:5000/cert">Download Your Vaccine Certificate</a></p>
+                                                </div></div></div></div></div></div><br><br>
+    </section>
+    <section id="vaccine-banner"></section>
+    <section id="slot-selection">
+        <div class="container">
+            <div class="row" style="margin-top: 4pc; margin-bottom: 4pc;">
+                <div class="col-12">
+                    <h3 class="text-center">Book your appointment now</h3>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12 text-center">
+                    <form>
+                        <div class="form-group row">
+                            <label for="name" class="col-sm-4 col-form-label customLabel">Name</label>
+                            <div class="col-sm-8">
+                              <input type="text" class="form-control" id="name" placeholder="Enter your full name">
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <label for="uniqueId" class="col-sm-4 col-form-label customLabel">Passport</label>
+                            <div class="col-sm-8">
+                              <input type="text" class="form-control" id="uniqueId" placeholder="Enter passport number">
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <label for="staticEmail" class="col-sm-4 col-form-label customLabel">Email</label>
+                            <div class="col-sm-8">
+                              <input type="text" class="form-control" id="email" placeholder="email@example.com">
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <label for="city" class="col-sm-4 col-form-label customLabel">City</label>
+                            <div class="col-sm-8">
+                              <input type="text" class="form-control" id="city" placeholder="Enter the name of your city">
+                            </div>
+                            </div>
+                            <div class="form-group row">
+                            <label for="pin" class="col-sm-4 col-form-label customLabel">Postal/ZIP code</label>
+                            <div class="col-sm-8">
+                              <input type="text" class="form-control" id="pin" placeholder="e.g. 123456">
+                            </div>
+                            </div><br><br>
+                        </div>
+                        <br>&nbsp;
+                        <div class="form-group form-check" align="center">
+                          <input align="center" style="margin-left:32pc" type="checkbox" class="form-check-input" id="exampleCheck1">
+                          <label class="form-check-label customLabel" style="margin-left:34pc" for="exampleCheck1">Above 18</label>
+                        </div>
+                                <button type="submit" style="margin-left: 34pc;" class="btn btn-primary">Submit</button>
+                      </form><br><br>
+                </div>
+            </div>
+        </div>
+        <br><br>
+    </section>
+    <section id="how-it-works">
+        <div class="container">
+            <div class="row text-center">
+                <div class="col-12">
+                    <h1>
+                        How it Works
+                    </h1>
+                </div>
+            </div>
+            <div class="row text-center">
+                <div class="col-3" action="/register">
+                   <a href="http://127.0.0.1:5000/register"> <h3>REGISTER YOURSELF</h3> </a>
+                    <p>Register using your Mobile no. or Aadhaar no. or any other Identity docs..</p>
+                </div>
+                <div class="col-3" action="/register">
+                  <a href="http://127.0.0.1:5000/register"><h3>CHOOSE LOCATION</h3></a>
+                    <p>Select your nearby Vaccine Center for vaccination</p>
+                </div>
+                <div class="col-3" action="/register">
+                  <a href="http://127.0.0.1:5000/register"> <h3>CONFIRM YOUR SLOT</h3></a>
+                    <p>Book your slot to Get Vaccine</p>
+                </div>
+                <div class="col-3">
+                    <a href="http://127.0.0.1:5000/cert" ><h3>GET CERTIFICATE</h3></a>
+                    <p>Get your Vaccination certificate.</p>
+                </div>
+                <div class="col-3">
+                    <a href="FAQ.html"><h3>ANY QUESTION?</h3></a>
+                    <p>Please follow our Frequently asked questions (FAQ)</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer class="page-footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-6 text-left">
+                    <p> Copyright © 2021 COVID. All Rights Reserved </p>
+                </div>
+                <div class="col-6 text-right">
+                    <p>Group-4 | CSAT Emerging Technologies</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+  </body>
+  </html>

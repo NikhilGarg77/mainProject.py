@@ -1,0 +1,53 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald&display=swap');
+
+.nav-item{
+    padding:2px;
+    font-family: Roboto,sans-serif!important;
+    font-size: 1.2em;
+    font-weight: 400;
+    line-height: 1.4em;
+    word-spacing: -0.13em;
+}
+
+
+.navbar-brand{
+    width: 80px;
+    height: 80px;
+}
+
+  #navbarCollapse{
+      margin-left: 30px;
+
+  }
+
+  /**BTN Primary**/
+  .btn-primary{
+    background-color: #ffc002;
+    color: #001f60!important;
+    border-radius: 5px;
+    font-family: Roboto,sans-serif!important;
+    text-decoration: none;
+    padding: 8px 20px!important;
+    display: block;
+    border-color: #ffc002;
+  }
+
+.btn-primary:hover{
+    background-color: #ff8900;
+    border-color: #ff8900;
+}
+
+.btn-primary:focus{
+    background-color: #ff8900;
+    border-color: #ff8900;
+}
+
+.btn-primary:active{
+    background-color: rgb(94, 79, 126);
+    box-shadow: 0 1px 1px rgba(255, 255, 255, 0.075) inset, 0 0 8px rgba(114, 96, 153, 0.6);
+    outline: 0 none;
+}
+.btn-primary:not(:disabled):not(.disabled):active{
+  color: #666666;
+  background: #ff8900;
+}

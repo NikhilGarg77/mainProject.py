@@ -1,0 +1,66 @@
+body {
+  margin: 0;
+  padding: 0;
+
+}
+
+.text-info {
+    color: #343b49!important;
+}
+
+p {
+    font-family: Roboto,sans-serif!important;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+#login_section {
+    background: #fdbc00 url(images/Vectorbg.png);
+      color: #fff;
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: 50% 50%;
+      height: 100%;
+}
+
+#login .container #login-row #login-column #login-box {
+  margin-top: 120px;
+  max-width: 600px;
+  border: 1px solid #9C9C9C;
+  background-color: #EAEAEA;
+}
+#login .container #login-row #login-column #login-box #login-form {
+  padding: 20px;
+}
+#login .container #login-row #login-column #login-box #login-form #register-link {
+  margin-top: -85px;
+}
+
+footer {
+    padding: 10px 0;
+    font-size: 14px;
+    background-color: #343b49;
+    color: #fff;
+    font-weight: 400;
+}
+
+.btn-primary{
+    background-color: #ffc002;
+    color: #001f60!important;
+    border-radius: 5px;
+    font-family: Roboto,sans-serif!important;
+    text-decoration: none;
+    padding: 8px 20px!important;
+    display: block;
+    border-color: #ffc002;
+  }
+  
+.btn-primary:hover{
+    background-color: #ff8900;
+    border-color: #ff8900;
+}
+
+.required-field::after {
+    content: " *";
+    color: red;
+}

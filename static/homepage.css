@@ -1,0 +1,94 @@
+
+#post-header {
+    background-color: #1e3770;
+    margin-top: 100px;
+    color: white;
+    padding-top: 10px;
+}
+
+p {
+    font-family: Roboto,sans-serif!important;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.nav-link {
+    cursor: pointer;
+}
+
+#helpline {
+    margin-top: 2pc;
+}
+
+#helpline .tab-index {
+    color: #0056b3!important;
+}
+
+#vaccine-banner {
+    background: url(images/baanner2.jpg);
+      min-height: 24pc;
+      color: #fff;
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: 50% 50%;
+}
+
+#how-it-works {
+    background: #fdbc00 url(images/Vectorbg.png);
+    min-height: 20pc;
+      color: #fff;
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: 50% 50%;
+}
+
+h3 {
+    color: #000;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+#how-it-works p {
+    padding: 5px 35px;
+    font-weight: 400;
+    font-size: 16px;
+    color: #000;
+}
+
+#how-it-works h1 {
+    color: #374957!important;
+    font-size: 28px;
+    font-weight: 700;
+    margin-top: 2pc;
+    margin-bottom: 3pc;
+}
+
+footer {
+    padding: 10px 0;
+    font-size: 14px;
+    background-color: #343b49;
+    color: #fff;
+    font-weight: 400;
+}
+
+.btn-primary{
+    background-color: #ffc002;
+    color: #001f60!important;
+    border-radius: 5px;
+    font-family: Roboto,sans-serif!important;
+    text-decoration: none;
+    padding: 8px 20px!important;
+    display: block;
+    border-color: #ffc002;
+  }
+
+.btn-primary:hover{
+    background-color: #ff8900;
+    border-color: #ff8900;
+}
+
+.customLabel {
+    font-size: 17px;
+    font-weight: 700;
+    color: #000;
+}
